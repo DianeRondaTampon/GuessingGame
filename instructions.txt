@@ -1,0 +1,84 @@
+
+TRY NU THE NUMBER OF TRIES 1,2,3 INSTEAD OF 1 OR MORE
+
+WHEN YOU WON TELL :YOU WON,AT TRY NUM 17
+
+
+BUTTON FOR RESTART THE GAME AFTER YOU WON 
+ATT ANY TIME YOU PRESS THE BUTTON WILL START AGAIN 
+
+LABEL YOU SHOUDL HAVE 
+
+CHANGE THE NAME OF THE SOLUTION//
+Guessing Game: THE NEME OF THE SOLUTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private void restartButton_Click(object sender, EventArgs e)
+{
+    // Reset game variables
+    guessCount = 0;
+    Random random = new Random();
+    secretNumber = random.Next(1, 100);
+
+    // Reset UI elements
+    label1.Text = "0";
+    textBox1.Text = "Enter a number from 1 to 100";
+    MessageBox.Show("Guess the Number");
+}
